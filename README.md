@@ -120,10 +120,3 @@ http://localhost:8501
 
 ---
 
-## 🔐 Note on API Keys
-
-* API keys are not stored in the repository
-* Use Streamlit Cloud Secrets for deployment
-* Use `.env` for local development
-
----
