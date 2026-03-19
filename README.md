@@ -25,8 +25,8 @@ The chatbot uses the **LLaMA 3.1 model via Groq API** to generate intelligent an
 
 - The chatbot maintains conversation history using `st.session_state`
 - All user messages are sent to the LLM along with previous context
-- A **custom system prompt** defines restaurant details like menu, pricing, and behavior
-- The AI responds like a **real restaurant assistant**
+- A custom system prompt defines restaurant details like menu, pricing, and behavior
+- The AI responds like a real restaurant assistant
 
 ---
 
@@ -52,5 +52,78 @@ The chatbot uses the **LLaMA 3.1 model via Groq API** to generate intelligent an
 
 ## 📸 Screenshots / Demo
 
-<img width="1375" height="1032" alt="{5CDC0087-618D-4F8B-B047-90EEAD93A743}" src="https://github.com/user-attachments/assets/c1d57c93-9762-41fa-a112-b8dafe32dde7" />
+Example:<img width="1375" height="1032" alt="image" src="https://github.com/user-attachments/assets/f1e14b42-4869-4ef5-bf36-8ac856b269cf" />
 
+
+---
+
+## ⚙️ How to Run This Project Locally
+
+Follow these steps to set up and run the project on your system:
+
+### 1. Clone the Repository
+
+```bash
+git clone https://github.com/Sreejaan/Restaurant_Chatbot.git
+cd Restaurant_Chatbot
+````
+
+### 2. Create a Virtual Environment (Recommended)
+
+```bash
+python -m venv venv
+```
+
+Activate it:
+
+**Windows:**
+
+```bash
+venv\Scripts\activate
+```
+
+**Mac/Linux:**
+
+```bash
+source venv/bin/activate
+```
+
+### 3. Install Required Dependencies
+
+```bash
+pip install -r requirements.txt
+```
+
+### 4. Set Up API Key
+
+Create a `.env` file in the root directory and add:
+
+```env
+RESTAURANT_API_KEY=your_groq_api_key_here
+```
+
+> Replace `your_groq_api_key_here` with your actual Groq API key.
+
+### 5. Run the Application
+
+```bash
+streamlit run app.py
+```
+
+### 6. Open in Browser
+
+After running the above command, open:
+
+```
+http://localhost:8501
+```
+
+---
+
+## 🔐 Note on API Keys
+
+* API keys are not stored in the repository
+* Use Streamlit Cloud Secrets for deployment
+* Use `.env` for local development
+
+---
