@@ -53,3 +53,4 @@ The chatbot uses the **LLaMA 3.1 model via Groq API** to generate intelligent an
 ## 📸 Screenshots / Demo
 
 <!-- Add your screenshots below -->
+![alt text]({5CDC0087-618D-4F8B-B047-90EEAD93A743}.png)
