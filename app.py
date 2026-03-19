@@ -5,7 +5,7 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-client = Groq(api_key = os.getenv("RESTAURANT_API_KEY"))
+client = Groq(api_key = st.secrets["RESTAURANT_API_KEY"])
 
 st.title("Restaurant ChatBot")
 
